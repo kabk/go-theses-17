@@ -113,9 +113,9 @@ def write_html(theses):
     <figure>
         <a href="{url}"><img src="{image}"/></a>
     </figure>
-    <h2><a href="{url}">{url} {title}</a></h2>
+    <h2><a href="{url}">{title}</a></h2>
     <h3>{creator}</h3>
-    <p>{description} <a href="{url}">Continue reading…</a></p>
+    <p>{description} <a href="{url}">Continue reading at {url}…</a></p>
 </div>
 """
     

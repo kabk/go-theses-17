@@ -115,7 +115,7 @@ def write_html(theses):
     </figure>
     <h2><a href="{url}">{title}</a></h2>
     <h3>{creator}</h3>
-    <p>{description} <a href="{url}">Continue reading at {url}…</a></p>
+    <p>{description} <a href="{url}">Continue reading at {url}…</a> or check out the source on <a href="https://github.com/kabk/{slug}">Github</a></p>
 </div>
 """
     

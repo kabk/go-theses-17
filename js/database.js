@@ -69,7 +69,7 @@ var people = {
 		"titel" : "Participatory Media and Memes as Pitchforks and Torches",
 		"tekst" : ["As a design student I have always had an interest in the role of the graphic designer and the development of the field.", "As much as I declare ridicule and humor a weapon, it’s a peaceful one at that."],
 		"egoMention" : "20",
-		"font" : "caslon"
+		"font" : "atlas"
 	},
 
 
@@ -252,6 +252,8 @@ for( var i = 0; i < size; i++ ){
 
 	// assign random class for css animation
 	var quoteToBeAnimated = document.getElementById('quote'+(i+1));
+
+	quoteToBeAnimated.style.fontFamily = people[i].font;
 
 	quoteToBeAnimated.style.animation += '' + classNames[arr[0]] + ' 20s infinite';
 	quoteToBeAnimated.style.animation += ', ' + classNames[arr[1]] + ' 23s infinite';

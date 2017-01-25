@@ -65,3 +65,95 @@
     letter-spacing: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+@font-face {
+  font-family: 'kobern';
+  src: url(thesis-fonts/kobern-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'andale';
+  src: url(thesis-fonts/andale.ttf);
+}
+
+@font-face {
+  font-family: 'antique';
+  src: url(thesis-fonts/antique.ttf);
+}
+
+@font-face {
+  font-family: 'apercu';
+  src: url(thesis-fonts/apercu.ttf);
+}
+
+@font-face {
+  font-family: 'arialnarrow';
+  src: url(thesis-fonts/arialnarrow.ttf);
+}
+
+@font-face {
+  font-family: 'arvo';
+  src: url(thesis-fonts/arvo.ttf);
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url(thesis-fonts/bebas.otf);
+}
+
+@font-face {
+  font-family: 'butler';
+  src: url(thesis-fonts/butler.otf);
+}
+
+@font-face {
+  font-family: 'atlas';
+  src: url(thesis-fonts/atlas.otf);
+}
+
+@font-face {
+  font-family: 'charter';
+  src: url(thesis-fonts/charter.ttf);
+}
+
+@font-face {
+  font-family: 'georgia';
+  src: url(thesis-fonts/georgia.ttf);
+}
+
+@font-face {
+  font-family: 'gothic';
+  src: url(thesis-fonts/gothic.ttf);
+}
+
+@font-face {
+  font-family: 'kavivanar';
+  src: url(thesis-fonts/kavivanar.ttf);
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url(thesis-fonts/lato.ttf);
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url(thesis-fonts/opensans.ttf);
+}
+
+@font-face {
+  font-family: 'square';
+  src: url(thesis-fonts/square.ttf);
+}
+
+@font-face {
+  font-family: 'worksans';
+  src: url(thesis-fonts/worksans.ttf);
+}

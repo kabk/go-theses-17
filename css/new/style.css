@@ -1,0 +1,67 @@
+.slide {
+  background-color: black; }
+  .slide .quote {
+    text-align: center; }
+    .slide .quote h1 {
+      font-family: sans-serif;
+      text-transform: uppercase;
+      color: white;
+      font-size: 10vh;
+      line-height: 10vh;
+      letter-spacing: 10px;
+      max-width: 90%;
+      margin: 0 auto; }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(360deg); }
+  50% {
+    -webkit-transform: rotateY(340deg); }
+  100% {
+    -webkit-transform: rotateY(0deg); } }
+@keyframes win {
+  0% {
+    text-shadow: 36px 36px 10px red; }
+  50% {
+    text-shadow: -36px -36px 30px red; }
+  100% {
+    text-shadow: 36px 36px 10px red; } }
+@keyframes test {
+  0% {
+    background-color: black; }
+  50% {
+    background-color: white; }
+  100% {
+    background-color: black; } }
+@keyframes fire {
+  0% {
+    text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red; }
+  50% {
+    text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red; }
+  100% {
+    text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red; } }
+@keyframes random {
+  0% {
+    text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red;
+    letter-spacing: 0;
+    filter: blur(0px); }
+  50% {
+    text-shadow: 0px -1px 4px white, 1px -5px 9px yellow, 0px -10px 12px #ff8000, -1px -9px 19px red;
+    letter-spacing: 5px;
+    filter: blur(3px); }
+  100% {
+    text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red;
+    letter-spacing: 0;
+    filter: blur(0px); } }
+@keyframes random2 {
+  0% {
+    text-shadow: 0 0 0px #fff, 0 0  0px #fff, 0 0  0px #fff, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95;
+    letter-spacing: 5px; }
+  50% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    letter-spacing: 5px; }
+  100% {
+    text-shadow: 0 0 0px #fff, 0 0  0px #fff, 0 0  0px #fff, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95;
+    letter-spacing: 5px; } }
+
+/*# sourceMappingURL=style.css.map */

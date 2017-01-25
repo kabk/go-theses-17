@@ -1,0 +1,204 @@
+a {color:pink;}
+
+body {
+    font-size: 21px;
+    line-height: 24px;
+    padding: 8px 16px 0px 8px;
+    font-family: NeueHaasUnicaPro-Light, sans-serif;
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0 0 20px 0;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+article { 
+    max-width: 602px;
+}
+
+#example article {
+    max-width: 734px;
+    margin-left: 300px;
+}
+
+#example nav {
+    float: left;
+    width: 280px;
+    height: 100%;
+}
+
+#example article {
+    clear: all;
+}
+
+@media screen and (max-width: 768px) {
+   #example nav {
+       float: none;
+   }
+   #example article {
+       margin-left: inherit;
+   }
+}
+
+
+li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+dt, dd {
+    margin-bottom: 2px;
+}
+
+dt {
+    margin-top: 6px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    margin: 0;
+    margin-top: 21px;
+    padding: 0;
+}
+
+h1 {
+}
+
+h2, h3 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h4, h5 {
+  font-size: 27px;
+  line-height: 30px;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+h6 {
+  font-size: 21px;
+  line-height: 24px;
+}
+
+
+ul, ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+a, a:hover, a:visited, a:active {
+    color: black;
+}
+
+a.group4, a.group4:hover, a.group4:visited, a.group4:active {
+    color: #0cf6ff;
+}
+
+a.group3title, a.group3title:hover, a.group3title:visited, a.group3title:active {
+    color: #0000FF;
+    font-size: 25px;
+}
+
+a.group3, a.group3:hover, a.group3:visited, a.group3:active {
+    color: #0000FF;
+}
+
+
+p, svg {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+p {
+  font-size: 21px;
+  line-height: 24px;
+  margin: 14px 0;
+}
+
+p.spacer {
+    line-height: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+figure {
+    margin: 0;
+    padding: 1em 40px;
+}
+
+figure figcaption {
+    padding-top: 1em;
+}
+
+/* This makes the images scale to the full width of the page */
+img {
+    max-width: 600px;
+    max-height: 315px;
+    width: 100%;
+    height: auto;
+}
+
+header select {
+    float: right;
+}
+
+div.preview {
+  max-width: 602px;
+  margin-bottom: 30px;
+}
+
+div.preview figure {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.preview p:last-child {
+  margin-bottom: 54px;
+}
+
+@media screen and (max-width: 480px) {
+    header select {
+        float: left;
+    }
+    header h1 {
+       font-size: 20px;
+   }
+   p {
+     font-size: 16px;
+     line-height: 24px;
+     margin: 14px 0;
+   }
+}
+
+@media screen and (min-width: 480px) {
+    article, header {
+        margin-left: 40px;
+    }
+}
+
+@media print {
+    header select {
+        display: none;
+    }
+}

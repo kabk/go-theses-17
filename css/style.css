@@ -12,6 +12,36 @@
       max-width: 90%;
       margin: 0 auto; }
 
+@keyframes skew {
+  0%{
+    transform:skew(0deg,0deg);
+    text-shadow: 0px -0px 0px white, 0px -0px 0px white, 0px -0px 0px #ff8000, 0px -0px 0px blue; 
+
+  }
+  50%{
+    transform:skew(30deg,10deg);
+    text-shadow: 0px -1px 4px white, 0px -2px 10px white, 0px -10px 20px #ff8000, 0px -18px 40px blue; 
+  }
+
+  100%{
+    transform:skew(0deg,0deg);
+    text-shadow: 0px -0px 0px white, 0px -0px 0px white, 0px -0px 0px #ff8000, 0px -0px 0px blue; 
+  }
+
+}
+
+@keyframes void {
+  0%{
+    color: red;
+  }
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: red;
+  }
+}
+
 @keyframes spin {
   0% {
     -webkit-transform: rotateY(360deg); }
@@ -65,3 +95,210 @@
     letter-spacing: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.jaap{
+  animation: fire 5s infinite;
+  animation: random 2s infinite;
+}
+
+.remco { 
+    animation: skew 2s infinite;
+}
+
+.noa {
+    animation: void 0.1s infinite; 
+}
+
+.jordy {
+    animation: fire; 
+}
+
+.carmel {
+    animation: fire; 
+}
+
+.janne {
+    animation: fire; 
+}
+
+.katerina {
+    animation: fire; 
+}
+
+.pascal {
+    animation: fire; 
+}
+
+.alice {
+    animation: fire; 
+}
+
+.yacinth {
+    animation: fire; 
+}
+
+.fay {
+    animation: fire; 
+}
+
+.laura {
+    animation: fire; 
+}
+
+.antonia {
+    animation: fire; 
+}
+
+.wies {
+    animation: fire; 
+}
+
+.marton {
+    animation: fire; 
+}
+
+.sean {
+    animation: fire; 
+}
+
+.magda {
+    animation: fire; 
+}
+
+.lisa {
+    animation: fire; 
+}
+
+.haewon {
+    animation: fire; 
+}
+
+.ninthe {
+    animation: fire; 
+}
+
+.bohye {
+    animation: fire; 
+}
+
+.manus {
+    animation: fire; 
+}
+
+.jamie {
+    animation: fire; 
+}
+
+.amaya {
+    animation: fire; 
+}
+
+.carlijn {
+    animation: fire; 
+}
+
+
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+@font-face {
+  font-family: 'kobern';
+  src: url(thesis-fonts/kobern-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'andale';
+  src: url(thesis-fonts/andale.ttf);
+}
+
+@font-face {
+  font-family: 'antique';
+  src: url(thesis-fonts/antique.ttf);
+}
+
+@font-face {
+  font-family: 'apercu';
+  src: url(thesis-fonts/apercu.ttf);
+}
+
+@font-face {
+  font-family: 'arialnarrow';
+  src: url(thesis-fonts/arialnarrow.ttf);
+}
+
+@font-face {
+  font-family: 'arvo';
+  src: url(thesis-fonts/arvo.ttf);
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url(thesis-fonts/bebas.otf);
+}
+
+@font-face {
+  font-family: 'butler';
+  src: url(thesis-fonts/butler.otf);
+}
+
+@font-face {
+  font-family: 'atlas';
+  src: url(thesis-fonts/atlas.otf);
+}
+
+@font-face {
+  font-family: 'charter';
+  src: url(thesis-fonts/charter.ttf);
+}
+
+@font-face {
+  font-family: 'chronicle';
+  src: url(thesis-fonts/chronicle.otf);
+}
+
+@font-face {
+  font-family: 'georgia';
+  src: url(thesis-fonts/georgia.ttf);
+}
+
+@font-face {
+  font-family: 'gothic';
+  src: url(thesis-fonts/gothic.ttf);
+}
+
+@font-face {
+  font-family: 'graphik';
+  src: url(thesis-fonts/graphik.otf);
+}
+
+@font-face {
+  font-family: 'lyon';
+  src: url(thesis-fonts/`.ttf);
+}
+
+@font-face {
+  font-family: 'kavivanar';
+  src: url(thesis-fonts/kavivanar.ttf);
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url(thesis-fonts/lato.ttf);
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url(thesis-fonts/opensans.ttf);
+}
+
+@font-face {
+  font-family: 'square';
+  src: url(thesis-fonts/square.ttf);
+}
+
+@font-face {
+  font-family: 'worksans';
+  src: url(thesis-fonts/worksans.ttf);
+}
+

@@ -1,5 +1,5 @@
 #banner{
-	height:7vh;
+	height:35vh;
 }
 
 #main{
@@ -32,24 +32,38 @@
 	font-size:120%;
 }
 
+.lol{
+	background-color:red;
+}
+
 #names{
+	height:65vh;
+	margin-top:-17.5vh;
 	font-family: sans-serif;
 	color:black;
 	font-weight:bold;
 	padding:10px;
-	line-height:20px;
+	line-height:16px;
 	font-family:lyon;
 }
 
-#left{
-	width:20vw;
+#head{
+	width:97vw;
 	left:0px;
-	position: fixed;
+	position:absolute;
 	margin-left:15px;
 	font-family:sans-serif;
 	font-weight:bold;
+	font-size:7vw;
+	line-height:80px;
 	padding:10px;
+	padding-top:40px;
 	font-family:lyon;
+	z-index:99999;
+
+    text-align: justify;
+    -moz-text-align-last: right; /* Code for Firefox */
+    text-align-last: justify;
 }
 
 p{
@@ -57,14 +71,3 @@ p{
 	padding:0;
 }
 
-#right{
-	width:20vw;
-	right:0px;
-	position: fixed;
-	margin-right:30px;
-	font-family:sans-serif;
-	font-weight:bold;
-	text-align: right;
-	padding:10px;
-	font-family:lyon;
-}

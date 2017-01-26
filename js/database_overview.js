@@ -282,66 +282,40 @@ Object.size = function(obj) {
 //size of obj
 var size = Object.size(people);
 
-var classNames = ['fire', 'win', 'test', 'spin', 'random', 'random2'];
-
 for( var i = 0; i < size; i++ ){
 
-	var arr = [];
-	while(arr.length < 3){
-	    var randomnumber = Math.floor(Math.random()*classNames.length);
-	    if(arr.indexOf(randomnumber) > -1) continue;
-	    arr[arr.length] = randomnumber;
-	}
+	console.log("."+people[i].class+" { animation: fire; }");
 
 	var mainDiv = document.getElementById('items');
 	var namesDiv = document.getElementById('names');
 
-	mainDiv.innerHTML += "<div class='objects' id='slide"+(i+1)+"'><span>"+people[i].titel.toUpperCase()+"</span></div>";
-	namesDiv.innerHTML += "<span id='name"+(i+1)+"'>"+people[i].name+"</span><br/>";
+	mainDiv.innerHTML += "<div class='objects' id='slide"+(i+1)+"'><span class='slide"+(i+1)+"'>"+people[i].titel.toUpperCase()+"</span></div>";
+	namesDiv.innerHTML += "<span class='names' id='name"+(i+1)+"'>"+people[i].name+"</span><br/>";
 
 	var currentDiv = document.getElementById('slide'+(i+1));
 
-	currentDiv.style.fontFamily = people[i].font;
-
-
-	// // assign random class for css animation
-	// var quoteToBeAnimated = document.getElementById('slide'+(i+1));
-
-	// quoteToBeAnimated.style.fontFamily = people[i].font;
-
-	// quoteToBeAnimated.style.animation += '' + classNames[arr[0]] + ' 20s infinite';
-	// quoteToBeAnimated.style.animation += ', ' + classNames[arr[1]] + ' 23s infinite';
-	// quoteToBeAnimated.style.animation += ', ' + classNames[arr[2]] + ' 26s infinite';
-	
+	currentDiv.style.fontFamily = people[i].font;	
 }
 
+//assign class on mouseenter of the objects
 $('.objects').each(function(index){
 	$(this).on('mouseenter', function(){
-		$("#name"+(index+1)).css({ 'color' : 'red' });
-
+		$("#name"+(index+1)).css({ 'text-decoration' : 'underline' });
+		$(".slide"+(index+1)).addClass( people[index].class );
 	}).on('mouseleave', function(){
-		$("#name"+(index+1)).css({ 'color' : 'black' });		
+		$("#name"+(index+1)).css({ 'text-decoration' : 'none' });
+		$(".slide"+(index+1)).removeClass( people[index].class );	
 	});
-	// console.log($('#name'+(index+1)).attr('id') );
 });
 
-for(var i = 0; i < size; i++){
-
-	var index = i;
-
-	$("#slide"+(i+1)).on('mouseenter' , function() {
-       // console.log(i);
-       // console.log( $("#name"+(i+1)+"").attr('id') );
-        // $("#name"+(i+1)).css({ 'color' : 'red' });
+//assign class on mouseenter of the names
+$('.names').each(function(index){
+	$(this).on('mouseenter', function(){
+		$("#name"+(index+1)).css({ 'text-decoration' : 'underline' });
+		$(".slide"+(index+1)).addClass( people[index].class );	
+	}).on('mouseleave', function(){
+		$("#name"+(index+1)).css({ 'text-decoration' : 'none' });	
+		$(".slide"+(index+1)).removeClass( people[index].class );	
+		
 	});
-
-	// $("#slide"+(i+1)).on( 'mouseenter' , function() {
-	         
-	//          $("#name"+(i+1)).css({ 'color' : 'red' });
-
-	//      },
-	//      'mouseleave' , function() {
-	//          $("#name"+(i+1)).css({ 'color' : 'black' });
-	//      },
-	// });
-}
+});

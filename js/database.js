@@ -158,7 +158,7 @@ var people = {
 		"name" : "Lisa van den Heuvel",
 		"titel" : "Het Lijden dat ons Bindt",
 		"tekst" : ["Ik heb het over het hoertje langs de weg, dat drugsverslaafd is en voor haar gevoel geen andere uitweg ziet.", "Ik heb het over ons als mens."],
-		"egoMention" : "45",	
+		"egoMention" : "45",
 		"font" : "andale"
 	},
 
@@ -216,9 +216,71 @@ var people = {
 		"tekst" : ["als grafisch ontwerper uit het digitale tijdperk kan ik ergens wel relateren met de mannen in dit boek", "⌘Z zit in mijn vingers en zonder ook maar een seconde te twijfelen ⌘Z ik terug naar het begin en start weer opnieuw", "Het is mijn vaste ‘wapen’, en zoals in elk traditioneel superhelden verhaal moet ik het kwaad bestrijden."],
 		"egoMention" : "187",
 		"font" : "worksans"
-	},
+	}
 
 }
+
+function addListStyles( nextSlideIndex ) {
+	$('.fp-slidesNav ul li a').each(function(){
+
+		// clear ids
+		$(this).attr('id', '');
+
+		var thisIndex = Number($(this).attr('data-counter'));
+
+		if( thisIndex === (nextSlideIndex - 2) ) {
+				$(this).attr('id', 'left2');
+				$(this).addClass('currentLinks').show();
+		} else if ( thisIndex === (nextSlideIndex - 1) )  {
+				$(this).attr('id', 'left1');
+				$(this).addClass('currentLinks').show();
+		} else if ( thisIndex === nextSlideIndex ) {
+				// active
+				$(this).attr('id', 'center');
+				$(this).addClass('currentLinks').show();
+		} else if ( thisIndex === (nextSlideIndex + 1) ) {
+				$(this).attr('id', 'right1');
+				$(this).addClass('currentLinks').show();
+		} else if ( thisIndex === (nextSlideIndex + 2) ) {
+				$(this).attr('id', 'right2');
+				$(this).addClass('currentLinks').show();
+		} else {
+			$(this).removeClass().hide();
+		}
+	});
+}
+
+$(document).ready(function(){
+	$('#fullpage').fullpage({
+		slidesNavigation: true,
+		keyboardScrolling: true,
+		// fadingEffect: true,
+		paddingBottom: '40px',
+		controlArrows: true,
+		// scrollHorizontally: true,
+		// dragAndMove: true,
+
+		afterLoad : function (index) {
+			$('.fp-slidesNav ul li a').each(function(index){
+
+				// assign counters to the links
+				$(this).text(people[index].name);
+				$(this).attr('data-counter' , index );
+
+				if( $(this).hasClass('active') ) {
+
+				}
+			} );
+ 			addListStyles(0);
+		},
+
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+				addListStyles(nextSlideIndex);
+		}
+
+	});
+});
+
 
 //get amount of items from obj
 Object.size = function(obj) {
@@ -257,6 +319,5 @@ for( var i = 0; i < size; i++ ){
 	quoteToBeAnimated.style.animation += '' + classNames[arr[0]] + ' 20s infinite';
 	quoteToBeAnimated.style.animation += ', ' + classNames[arr[1]] + ' 23s infinite';
 	quoteToBeAnimated.style.animation += ', ' + classNames[arr[2]] + ' 26s infinite';
-	
-}
 
+}

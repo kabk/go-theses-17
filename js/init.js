@@ -1,14 +1,17 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		slidesNavigation: true
+		slidesNavigation: true,
+		keyboardScrolling: true,
+		// fadingEffect: true,
+		paddingBottom: '5vh',
+		controlArrows: true,
+		// scrollHorizontally: true,
+		// dragAndMove: true,
 
-		// afterLoad : function( index ){
-		// 	generateDivs();
-		// }
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+			console.log( anchorLink, index, slideIndex, direction, nextSlideIndex );
+		}
+
 	});
 
-	
-
 });
-
-

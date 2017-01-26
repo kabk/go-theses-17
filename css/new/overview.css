@@ -1,0 +1,70 @@
+#banner{
+	height:7vh;
+}
+
+#main{
+	margin-top:0vh;
+}
+
+.objects{
+	margin:10px;
+
+	width: 31%;
+	height: 21%;
+	float: left;
+
+	background-color:black;
+
+	padding:10px;
+
+	text-align:center;
+
+	color:white;
+
+	line-height:13vw;
+}
+
+.objects span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+
+	font-size:120%;
+}
+
+#names{
+	font-family: sans-serif;
+	color:black;
+	font-weight:bold;
+	padding:10px;
+	line-height:20px;
+	font-family:lyon;
+}
+
+#left{
+	width:20vw;
+	left:0px;
+	position: fixed;
+	margin-left:15px;
+	font-family:sans-serif;
+	font-weight:bold;
+	padding:10px;
+	font-family:lyon;
+}
+
+p{
+	margin:0;
+	padding:0;
+}
+
+#right{
+	width:20vw;
+	right:0px;
+	position: fixed;
+	margin-right:30px;
+	font-family:sans-serif;
+	font-weight:bold;
+	text-align: right;
+	padding:10px;
+	font-family:lyon;
+}

@@ -150,6 +150,11 @@
 }
 
 @font-face {
+  font-family: 'chronicle';
+  src: url(thesis-fonts/chronicle.otf);
+}
+
+@font-face {
   font-family: 'georgia';
   src: url(thesis-fonts/georgia.ttf);
 }
@@ -157,6 +162,11 @@
 @font-face {
   font-family: 'gothic';
   src: url(thesis-fonts/gothic.ttf);
+}
+
+@font-face {
+  font-family: 'lyon';
+  src: url(thesis-fonts/lyon.ttf);
 }
 
 @font-face {

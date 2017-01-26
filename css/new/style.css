@@ -12,13 +12,18 @@
       max-width: 90%;
       margin: 0 auto; }
 
+* a{
+  text-decoration: none;
+  color:white;
+}
+
 .title{
   color:white; 
   font-family:atlas; 
   text-align:left; 
   margin-left:20px; 
   position:absolute; 
-  width:100vw; 
+  width:50vw; 
   top:20px;
 }
 
@@ -28,10 +33,10 @@
   font-family:atlas; 
   text-align:right; 
   position:absolute; 
-  width:98vw; 
+  width:48vw; 
   top:20px;
+  margin-left:50vw;
 }
-
 
 @keyframes spin {
   0% {

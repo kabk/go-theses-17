@@ -1,3 +1,7 @@
+* a{
+	text-decoration: none;
+}
+
 #banner{
 	height:35vh;
 }
@@ -6,11 +10,21 @@
 	margin-top:0vh;
 }
 
+#names a {
+	color:black;
+	cursor: hand;
+}
+
+#items a {
+	color:white;
+	cursor: hand;
+}
+
 .objects{
 	margin:10px;
 
-	width: 31%;
-	height: 21%;
+	width: 95%;
+	height: 80vh;
 	float: left;
 
 	background-color:black;
@@ -21,7 +35,7 @@
 
 	color:white;
 
-	line-height:13vw;
+	line-height:80vh;
 }
 
 .objects span {
@@ -29,7 +43,98 @@
 	vertical-align: middle;
 	line-height: normal;
 
-	font-size:120%;
+	font-size:7vw;
+}
+
+.slide2{
+	font-size:10vw!important;
+}
+
+.slide3{
+	font-size:10vw!important;
+}
+
+.slide5{
+	font-size: 5vw!important;
+}
+
+.slide7{
+	font-size: 10vw!important;
+	line-height: 9vw!important;
+}
+
+.slide9{
+	font-size: 10vw!important;
+	line-height: 9vw!important;
+}
+
+.slide10{
+	font-size:6vw!important;
+}
+
+.slide11{
+	font-size:9vw!important;
+	line-height: 8vw!important;
+}
+
+.slide12{
+	font-size:9vw!important;
+	line-height:8vw!important;
+}
+
+.slide14{
+	font-size:10vw!important;
+	line-height: 10vw!important;
+}
+
+.slide15{
+	font-size: 9vw!important;
+	line-height:8vw!important;
+}
+
+.slide16{
+	font-size: 12vw!important;
+	line-height: 11vw!important;
+}
+
+.slide17{
+	font-size: 11vw!important;
+	line-height: 10vw!important;
+}
+
+.slide18{
+	font-size: 11vw!important;
+	line-height: 10vw!important;
+}
+
+.slide19{
+	font-size: 11vw!important;
+	line-height: 10vw!important;
+}
+
+.slide20{
+	font-size: 9vw!important;
+	line-height: 9vw!important;	
+}
+
+.slide21{
+	font-size: 9vw!important;
+	line-height: 9vw!important;
+}
+
+.slide22{
+	font-size: 9vw!important;
+	line-height: 9vw!important;
+}
+
+.slide23{
+	font-size: 11vw!important;
+	line-height: 10vw!important;
+}
+
+.slide24{
+	font-size: 12vw!important;
+	line-height: 10vw!important;
 }
 
 .lol{
@@ -43,8 +148,10 @@
 	color:black;
 	font-weight:bold;
 	padding:10px;
-	line-height:16px;
-	font-family:lyon;
+	line-height:18px;
+	font-family:graphik;
+	opacity:0;
+	transition: opacity 0.5s linear;
 }
 
 #head{
@@ -58,7 +165,7 @@
 	line-height:80px;
 	padding:10px;
 	padding-top:40px;
-	font-family:lyon;
+	font-family:graphik;
 	z-index:99999;
 
     text-align: justify;

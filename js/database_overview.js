@@ -289,8 +289,8 @@ for( var i = 0; i < size; i++ ){
 	var mainDiv = document.getElementById('items');
 	var namesDiv = document.getElementById('names');
 
-	mainDiv.innerHTML += "<div class='objects' id='slide"+(i+1)+"'><span class='slide"+(i+1)+"'>"+people[i].titel.toUpperCase()+"</span></div>";
-	namesDiv.innerHTML += "<span class='names' id='name"+(i+1)+"'>"+people[i].name+"</span><br/>";
+	mainDiv.innerHTML += "<a href='"+people[i].link+"'><div class='objects' id='slide"+(i+1)+"'><span class='slide"+(i+1)+"'>"+people[i].titel.toUpperCase()+"</span></div></a>";
+	namesDiv.innerHTML += "<span class='names' id='name"+(i+1)+"'><a href='"+people[i].link+"'>"+people[i].name+"</a></span><br/>";
 
 	var currentDiv = document.getElementById('slide'+(i+1));
 
@@ -302,9 +302,11 @@ $('.objects').each(function(index){
 	$(this).on('mouseenter', function(){
 		$("#name"+(index+1)).css({ 'text-decoration' : 'underline' });
 		$(".slide"+(index+1)).addClass( people[index].class );
+		document.title = people[index].name;
 	}).on('mouseleave', function(){
 		$("#name"+(index+1)).css({ 'text-decoration' : 'none' });
 		$(".slide"+(index+1)).removeClass( people[index].class );	
+		document.title = "Theses 2017";
 	});
 });
 
@@ -313,9 +315,20 @@ $('.names').each(function(index){
 	$(this).on('mouseenter', function(){
 		$("#name"+(index+1)).css({ 'text-decoration' : 'underline' });
 		$(".slide"+(index+1)).addClass( people[index].class );	
+		document.title = people[index].name;
 	}).on('mouseleave', function(){
 		$("#name"+(index+1)).css({ 'text-decoration' : 'none' });	
 		$(".slide"+(index+1)).removeClass( people[index].class );	
-		
+		document.title = "Theses 2017";		
 	});
+});
+
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+document.addEventListener("scroll", function() {
+	if (window.pageYOffset > h/3){
+		document.getElementById('names').style.opacity = "100";
+	} else {
+		document.getElementById('names').style.opacity = "0";
+	}
 });

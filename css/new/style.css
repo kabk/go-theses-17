@@ -38,6 +38,37 @@
   margin-left:50vw;
 }
 
+
+@keyframes skew {
+  0%{
+    transform:skew(0deg,0deg);
+    text-shadow: 0px -0px 0px white, 0px -0px 0px white, 0px -0px 0px #ff8000, 0px -0px 0px blue; 
+
+  }
+  50%{
+    transform:skew(30deg,10deg);
+    text-shadow: 0px -1px 4px white, 0px -2px 10px white, 0px -10px 20px #ff8000, 0px -18px 40px blue; 
+  }
+
+  100%{
+    transform:skew(0deg,0deg);
+    text-shadow: 0px -0px 0px white, 0px -0px 0px white, 0px -0px 0px #ff8000, 0px -0px 0px blue; 
+  }
+
+}
+
+@keyframes void {
+  0%{
+    color: red;
+  }
+  50%{
+    color: yellow;
+  }
+  100%{
+    color: red;
+  }
+}
+
 @keyframes spin {
   0% {
     -webkit-transform: rotateY(360deg); }
@@ -97,12 +128,12 @@
   animation: random 2s infinite;
 }
 
-.remco {
-    animation: fire; 
+.remco { 
+    animation: skew 2s infinite;
 }
 
 .noa {
-    animation: fire; 
+    animation: void 0.1s infinite; 
 }
 
 .jordy {
@@ -264,8 +295,13 @@
 }
 
 @font-face {
+  font-family: 'graphik';
+  src: url(thesis-fonts/graphik.otf);
+}
+
+@font-face {
   font-family: 'lyon';
-  src: url(thesis-fonts/lyon.ttf);
+  src: url(thesis-fonts/`.ttf);
 }
 
 @font-face {

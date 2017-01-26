@@ -232,8 +232,6 @@ Object.size = function(obj) {
 //size of obj
 var size = Object.size(people);
 
-console.log('generate');
-
 var classNames = ['fire', 'win', 'test', 'spin', 'random', 'random2'];
 
 for( var i = 0; i < size; i++ ){
@@ -248,7 +246,8 @@ for( var i = 0; i < size; i++ ){
 	var motherDiv = document.getElementById('section1');
 
 	// insert the quote as a slide in the html
-	motherDiv.innerHTML += "<div class='slide' id='slide"+(i+1)+"' data-anchor='slide"+(i+1)+"'><div class='quote'><h1 id='quote"+(i+1)+"'>"+people[i].tekst[Math.floor(Math.random() * people[i].tekst.length )]+"</h1></div></div>";
+	// added people[i].titel and people[i].name
+	motherDiv.innerHTML += "<div class='slide' id='slide"+(i+1)+"' data-anchor='slide"+(i+1)+"'><div class='title'>"+people[i].titel+"</div><div class='name'>"+people[i].name+"</div><div class='quote'><h1 id='quote"+(i+1)+"'>"+people[i].tekst[Math.floor(Math.random() * people[i].tekst.length )]+"</h1></div></div>";
 
 	// assign random class for css animation
 	var quoteToBeAnimated = document.getElementById('quote'+(i+1));

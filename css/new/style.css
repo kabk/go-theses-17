@@ -12,6 +12,27 @@
       max-width: 90%;
       margin: 0 auto; }
 
+.title{
+  color:white; 
+  font-family:atlas; 
+  text-align:left; 
+  margin-left:20px; 
+  position:absolute; 
+  width:100vw; 
+  top:20px;
+}
+
+/*deze css is een beetje kut qua positioning*/
+.name{
+  color:white; 
+  font-family:atlas; 
+  text-align:right; 
+  position:absolute; 
+  width:98vw; 
+  top:20px;
+}
+
+
 @keyframes spin {
   0% {
     -webkit-transform: rotateY(360deg); }

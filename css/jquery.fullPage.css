@@ -78,6 +78,7 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
+    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG_1moYi3WPLdBOYQHePdYMyoPNbS2M2KLEtR46vR8arEeD3ygrMzvLA');
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;

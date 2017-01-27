@@ -352,167 +352,322 @@ html.fp-enabled,
 
 // KEYFRAMES
 
+/*spins horizontally*/
+@keyframes spiny {
+  0% { -webkit-transform: rotateY(0deg); }
+  50% { -webkit-transform: rotateY(360deg); }
+  100% { -webkit-transform: rotateY(0deg); }
+}
+
+/*spins vertically*/
+@keyframes spinx {
+  0% { -webkit-transform: rotateX(0deg); }
+  50% { -webkit-transform: rotateX(360deg); }
+  100% { -webkit-transform: rotateX(0deg); }
+}
+
+@keyframes backgrbluetodarkblue {
+  0% { 
+    background-color: rgb(219,239,255);
+  }
+  50%{
+    background-color: rgb(2,66,228);
+  }
+  100%{
+    background-color: rgb(219,239,255);
+  }
+}
+
+@keyframes textbluetodarkblue {
+  0% { 
+    color: rgb(2,66,228);
+    -webkit-filter: blur(0px);
+  }
+  50%{
+    color: rgb(219,239,255);
+    -webkit-filter: blur(5px);
+  }
+  100%{
+    color: rgb(2,66,228);
+    -webkit-filter: blur(0px);
+  }
+}
+
+/*makes a border around the text*/
+@keyframes border {
+  0% { 
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white;
+  }
+  50%{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+  }
+  100%{
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white;
+  }
+}
+
+/*color change from yellow to red to yellow*/
+@keyframes yellowredyellow {
+  0% { color: yellow; }
+  50% { color: red; }
+  100% { color: yellow; }
+}
+
+/*color change from white to red to white again*/
+@keyframes whiteredwhite {
+  0% { color: white; }
+  50% { color: red; }
+  100% { color: white; }
+}
+
+/*color change from blue to black to blue*/
+@keyframes blueblackblue {
+  0% { color: blue; }
+  50% { color: black; }
+  100% { color: blue; }
+}
+
+@keyframes blackyellowblack {
+  0% { color: black; }
+  50% { color: #E3C930; }
+  100% { color: black; }
+}
+
+/*opacity change*/
+@keyframes eraser {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/*bounce up and down*/
+@keyframes bounce{
+  0% {
+    transform:translate(0px,0px);
+  }
+  50%{
+    transform:translate(0px,20px);
+  }
+  100%{
+    transform:translate(0px,0px);
+  }
+}
+
+/*rotate 360 no scope*/
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes flash {
+  0% { color: yellow; }
+  50% { color: red; }
+  100% { color: yellow; }
+}
+
+@keyframes flash2 {
+  0% { color: blue; }
+  50% { color: black; }
+  100% { color: blue; }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
 @keyframes spin {
-	0% { -webkit-transform: rotateY(360deg); }
-	50% { -webkit-transform: rotateY(340deg); }
-	100% { -webkit-transform: rotateY(0deg); }
+  0% { -webkit-transform: rotateY(360deg); }
+  50% { -webkit-transform: rotateY(340deg); }
+  100% { -webkit-transform: rotateY(0deg); }
 }
 
 @keyframes win {
-	0% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
-	50% { text-shadow: -36px -36px 30px rgba(255, 0, 0, 1); }
-	100% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
+  0% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
+  50% { text-shadow: -36px -36px 30px rgba(255, 0, 0, 1); }
+  100% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
 }
 
 @keyframes test {
-	0% { background-color: black; }
-	50% { background-color: white; }
-	100% { background-color: black; }
+  0% { background-color: black; }
+  50% { background-color: white; }
+  100% { background-color: black; }
 }
 
 @keyframes fire {
-	0% { text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red; }
-	50% { text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red; }
-	100% { text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red; }
+  0% { text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red; }
+  50% { text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red; }
+  100% { text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red; }
 
 }
 
 @keyframes random {
-	0% {
-		text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red;
-		letter-spacing: 0;
-		filter: blur(0px);
-	}
-	50% {
-		text-shadow: 0px -1px 4px white, 1px -5px 9px yellow, 0px -10px 12px #ff8000, -1px -9px 19px red;
-		letter-spacing: 5px;
-		filter: blur(3px);
-	}
-	100% {
-		text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red;
-		letter-spacing: 0;
-		filter: blur(0px);
-	}
+  0% {
+    text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red;
+    letter-spacing: 0;
+    filter: blur(0px);
+  }
+  50% {
+    text-shadow: 0px -1px 4px white, 1px -5px 9px yellow, 0px -10px 12px #ff8000, -1px -9px 19px red;
+    letter-spacing: 5px;
+    filter: blur(3px);
+  }
+  100% {
+    text-shadow: 0px -0px 0px white, 0px -0px 0px yellow, 0px -0px 0px #ff8000, 0px -0px 0px red;
+    letter-spacing: 0;
+    filter: blur(0px);
+  }
 }
 
 @keyframes random2 {
-	0% {
-		text-shadow: 0 0 0px #fff, 0 0  0px #fff, 0 0  0px #fff, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95;
-	    letter-spacing: 5px;
-	}
-	50% {
-		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
-	    letter-spacing: 5px;
-	}
-	100% {
-		text-shadow: 0 0 0px #fff, 0 0  0px #fff, 0 0  0px #fff, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95;
-	    letter-spacing: 5px;
-	}
+  0% {
+    text-shadow: 0 0 0px #fff, 0 0  0px #fff, 0 0  0px #fff, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95;
+      letter-spacing: 5px;
+  }
+  50% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+      letter-spacing: 5px;
+  }
+  100% {
+    text-shadow: 0 0 0px #fff, 0 0  0px #fff, 0 0  0px #fff, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95;
+      letter-spacing: 5px;
+  }
 
 }
 
-.jaap{
-  h1 {
-
-  }
-  // animation: fire 5s infinite;
+.jaap.active{
+  animation: rotating 1s infinite;
   // animation: random 2s infinite;
 }
 
-.remco {
+.remco.active{
     // animation: skew 2s infinite;
 }
 
-.noa {
+.noa.active {
     animation: void 0.1s infinite;
 }
 
-.jordy {
+.jordy.active {
+  background-color:black;
+  h1{
+    // animation: fire;
+  }
+}
+
+.carmel.active {
     // animation: fire;
 }
 
-.carmel {
+.janne.active {
     // animation: fire;
 }
 
-.janne {
+.katerina.active {
     // animation: fire;
 }
 
-.katerina {
+.pascal.active {
     // animation: fire;
 }
 
-.pascal {
+.alice.active {
     // animation: fire;
 }
 
-.alice {
+.yacinth.active {
     // animation: fire;
 }
 
-.yacinth {
+.fay.active {
     // animation: fire;
 }
 
-.fay {
+.laura.active {
     // animation: fire;
 }
 
-.laura {
+.antonia.active {
     // animation: fire;
 }
 
-.antonia {
+.wies.active {
     // animation: fire;
 }
 
-.wies {
+.marton.active {
     // animation: fire;
 }
 
-.marton {
-    // animation: fire;
+.sean.active {
+  // skew, black backgr
 }
 
-.sean {
-    // animation: fire;
+.magda.active {
+  // 
 }
 
-.magda {
-    // animation: fire;
+.lisa.active {
+  // wildcard
 }
 
-.lisa {
-    // animation: fire;
+.haewon.active {
+  // wildcard
 }
 
-.haewon {
-    // animation: fire;
+.ninthe.active {
+  // color to red, red dropshadow, white backgr
 }
 
-.ninthe {
-    // animation: fire;
+.bohye.active {
+  // wildcard
 }
 
-.bohye {
-    // animation: fire;
+.manus.active {
+  // 
 }
 
-.manus {
-    // animation: fire;
+.jamie.active {
+  // lichtblauw to donkerblauw backgr, donkerblauw to lichtblauw text, floating
 }
 
-.jamie {
-    // animation: fire;
+.amaya.active {
+  //black to yellow? beetje viesgeel
 }
 
-.amaya {
-    // animation: fire;
-}
-
-.carlijn {
-    // animation: fire;
+.carlijn.active {
+  //white background, opacity change, black text, bounce?
 }
 
 /*FONTS*/

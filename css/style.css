@@ -322,6 +322,138 @@ html.fp-enabled,
     #cross img:hover {
       cursor: pointer; }
 
+/*spins horizontally*/
+@keyframes spiny {
+  0% {
+    -webkit-transform: rotateY(0deg); }
+  50% {
+    -webkit-transform: rotateY(360deg); }
+  100% {
+    -webkit-transform: rotateY(0deg); } }
+/*spins vertically*/
+@keyframes spinx {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+  50% {
+    -webkit-transform: rotateX(360deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+@keyframes backgrbluetodarkblue {
+  0% {
+    background-color: #dbefff; }
+  50% {
+    background-color: #0242e4; }
+  100% {
+    background-color: #dbefff; } }
+@keyframes textbluetodarkblue {
+  0% {
+    color: #0242e4;
+    -webkit-filter: blur(0px); }
+  50% {
+    color: #dbefff;
+    -webkit-filter: blur(5px); }
+  100% {
+    color: #0242e4;
+    -webkit-filter: blur(0px); } }
+/*makes a border around the text*/
+@keyframes border {
+  0% {
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white; }
+  50% {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; }
+  100% {
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white; } }
+/*color change from yellow to red to yellow*/
+@keyframes yellowredyellow {
+  0% {
+    color: yellow; }
+  50% {
+    color: red; }
+  100% {
+    color: yellow; } }
+/*color change from white to red to white again*/
+@keyframes whiteredwhite {
+  0% {
+    color: white; }
+  50% {
+    color: red; }
+  100% {
+    color: white; } }
+/*color change from blue to black to blue*/
+@keyframes blueblackblue {
+  0% {
+    color: blue; }
+  50% {
+    color: black; }
+  100% {
+    color: blue; } }
+@keyframes blackyellowblack {
+  0% {
+    color: black; }
+  50% {
+    color: #E3C930; }
+  100% {
+    color: black; } }
+/*opacity change*/
+@keyframes eraser {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+/*bounce up and down*/
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px); }
+  50% {
+    transform: translate(0px, 20px); }
+  100% {
+    transform: translate(0px, 0px); } }
+/*rotate 360 no scope*/
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes flash {
+  0% {
+    color: yellow; }
+  50% {
+    color: red; }
+  100% {
+    color: yellow; } }
+@keyframes flash2 {
+  0% {
+    color: blue; }
+  50% {
+    color: black; }
+  100% {
+    color: blue; } }
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 @keyframes spin {
   0% {
     -webkit-transform: rotateY(360deg); }
@@ -373,8 +505,14 @@ html.fp-enabled,
   100% {
     text-shadow: 0 0 0px #fff, 0 0  0px #fff, 0 0  0px #fff, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95, 0 0  0px #ff2d95;
     letter-spacing: 5px; } }
-.noa {
+.jaap.active {
+  animation: rotating 1s infinite; }
+
+.noa.active {
   animation: void 0.1s infinite; }
+
+.jordy.active {
+  background-color: black; }
 
 /*FONTS*/
 @font-face {

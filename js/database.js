@@ -18,7 +18,7 @@ var people = {
 	"1" : {
 		"name" : "Remco Blom",
 		"titel" : "Parallax",
-		"tekst" : ["I focus on practical knowledge, potential problems and the adaptability of typography", "empty"],
+		"tekst" : ["I focus on practical knowledge, potential problems and the adaptability of typography"],
 		"egoMention" : "19",
 		"font" : "times",
 		"link" : "https://kabk.github.io/go-theses-17-Remco-Blom-Parallax/",

@@ -383,10 +383,10 @@ html.fp-enabled,
 			font-size: 5vh;
 			line-height: 5vh;
 			@media screen and (min-width: 1024px) {
-				font-size: 12vh;
-				line-height: 12vh;
+				font-size: 8vh;
+				line-height: 8vh;
 			}
-			letter-spacing: 10px;
+			letter-spacing: 2px;
 			max-width: 85%;
 			margin: 0 auto;
 		}
@@ -426,7 +426,7 @@ html.fp-enabled,
 }
 
 @keyframes backgrbluetodarkblue {
-  0% { 
+  0% {
     background-color: rgb(219,239,255);
   }
   50%{
@@ -438,7 +438,7 @@ html.fp-enabled,
 }
 
 @keyframes textbluetodarkblue {
-  0% { 
+  0% {
     color: rgb(2,66,228);
     -webkit-filter: blur(0px);
   }
@@ -454,7 +454,7 @@ html.fp-enabled,
 
 /*makes a border around the text*/
 @keyframes border {
-  0% { 
+  0% {
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: black;
   }
@@ -906,7 +906,7 @@ background-color: black;
 }
 
 .janne.active {
-     
+
 }
 
 .katerina.active {
@@ -926,7 +926,7 @@ background-color: black;
   background-color: black;
   h1{
     animation: whitetopink 5s infinite;
-  } 
+  }
 }
 
 .yacinth.active {
@@ -938,7 +938,7 @@ background-color: black;
         border: 3px solid red;
         color:black;
       }
-     
+
 }
 
 .fay.active {
@@ -1023,6 +1023,7 @@ background-color: black;
     border-radius:15px;
     animation: manus 5s infinite;
   }
+
 }
 
 .jamie.active {
@@ -1057,7 +1058,7 @@ background-color: black;
 
 @font-face {
   font-family: 'kobern';
-  src: url(thesis-fonts/kobern-regular-webfont.ttf);
+  src: url(thesis-fonts/kobern.ttf);
 }
 
 @font-face {

@@ -776,6 +776,17 @@ line-height:10px;
   }
 }
 
+@keyframes manus{
+  0%{
+    background-color:black;
+  }
+  50%{
+    background-color:blue;
+  }
+  100%{
+    background-color:black;
+  }
+}
 
 @keyframes wiesje{
   0%{
@@ -785,7 +796,7 @@ line-height:10px;
     -webkit-transform: scale(1);
   }
   100%{
-    -webkit-transform: scale(0.8);
+    -webkit-transform: scale(0.8);   
   }
 }
 
@@ -839,6 +850,20 @@ background-color: rgb(219, 201, 162);
   }
   100%{
 background-color: black;
+  }
+}
+
+@keyframes haewon{
+  0%{
+    color: black;
+
+  }
+  50%{
+    color: grey;
+
+  }
+  100%{
+    color: black;
   }
 }
 
@@ -973,6 +998,9 @@ background-color: black;
 
 .haewon.active {
   // wildcard
+  h1{
+    animation: haewon 0.5s infinite;
+  }
 }
 
 .ninthe.active {
@@ -990,7 +1018,11 @@ background-color: black;
 }
 
 .manus.active {
-  // 
+
+  h1{
+    border-radius:15px;
+    animation: manus 5s infinite;
+  }
 }
 
 .jamie.active {

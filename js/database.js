@@ -4,6 +4,7 @@
 //console.log(people[i].egoMention);
 
 var people = {
+
 	"0" : {
 		"name" : "Jaap Smit",
 		"titel" : "Het Schild: van Wapen tot Icoon",
@@ -64,7 +65,7 @@ var people = {
 	"6" : {
 		"name" : "Katerina Gaidamaka",
 		"titel" : "When USSR collapsed",
-		"tekst" : ["I began to understand that in my foreign reality, was an emergence of a Post-Soviet style—if it even can be called “style”.", "I WANT TO GIVE AN UNDERSTANDING OF MY ORIGIN CULTURE."],
+		"tekst" : ["I began to understand that in my foreign reality, was an emergence of a Post-Soviet style—if it even can be called “style”", "I WANT TO GIVE AN UNDERSTANDING OF MY ORIGIN CULTURE"],
 		"egoMention" : "18",
 		"font" : "lato",
 		"link" : "https://kabk.github.io/go-theses-17-katerina-gaidamaka-postsoviet/"
@@ -244,13 +245,23 @@ var people = {
 	},
 }
 
-$('.top-nav').on('mouseover' , function(){
-	$('.top-nav a > p').addClass('more');
-}).on('mouseleave' , function() {
-	$('.top-nav a > p').removeClass('more');
-});
+//get amount of items from obj
+Object.size = function(obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
+//size of obj
+var size = Object.size(people);
+// random number to add class active to
+var randomStart = Math.floor(Math.random() * size);
+
 
 function addListStyles( nextSlideIndex ) {
+
 	$('.fp-slidesNav ul li a').each(function(){
 
 		// clear ids
@@ -284,51 +295,8 @@ function addListStyles( nextSlideIndex ) {
 	});
 }
 
-$(document).ready(function(){
-	$('#fullpage').fullpage({
-		slidesNavigation: true,
-		keyboardScrolling: true,
-		// fadingEffect: true,
-		paddingBottom: '40px',
-		controlArrows: true,
-		// scrollHorizontally: true,
-		// dragAndMove: true,
-
-		afterLoad : function (index) {
-			$('.fp-slidesNav ul li a').each(function(index){
-
-				// assign counters to the links
-				$(this).text(people[index].name);
-				$(this).attr('data-counter' , index );
-
-				if( $(this).hasClass('active') ) {
-
-				}
-			} );
- 			addListStyles(0);
-		},
-
-		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
-				addListStyles(nextSlideIndex);
-		}
-
-	});
-});
-
-
-//get amount of items from obj
-Object.size = function(obj) {
-    var size = 0, key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
-};
-
-//size of obj
-var size = Object.size(people);
-
 var classNames = ['fire', 'win', 'test', 'spin', 'random', 'random2'];
+console.log(people[randomStart].name);
 
 for( var i = 0; i < size; i++ ){
 
@@ -339,13 +307,24 @@ for( var i = 0; i < size; i++ ){
 	    arr[arr.length] = randomnumber;
 	}
 
+	var overviewDiv = document.getElementById('showoverview');
+	overviewDiv.innerHTML += "<br><a href='"+people[i].link+"'><div class='overviewtitles'> <span id='overviewtitle"+(i+1)+"'>"+people[i].titel.toUpperCase()+"</span><br><span id='overviewname'>"+people[i].name+"</span><br> </div></a>";
+
+	var titleStyle = document.getElementById('overviewtitle'+(i+1));
+	titleStyle.style.fontFamily = people[i].font;
+
 	var motherDiv = document.getElementById('section1');
 
 	// insert the quote as a slide in the html
 	// added people[i].titel and people[i].name
 	// <a href='"+people[i].link+"'> "+people[i].titel+" </a></div><div class='name'><a href='"+people[i].link+"'>"+people[i].name+"</a></div>
 
-	motherDiv.innerHTML += "<div class='slide' id='slide"+(i+1)+"' data-anchor='slide"+(i+1)+"'><div class='title'><div class='quote'><a href='"+people[i].link+"'><h1 id='quote"+(i+1)+"'>"+people[i].tekst[Math.floor(Math.random() * people[i].tekst.length )]+"</h1></a></div></div>";
+	if (i === randomStart) {
+		motherDiv.innerHTML += "<div class='slide active' id='slide"+(i+1)+"' data-anchor='slide"+(i+1)+"'><div class='title'><div class='quote'><a href='"+people[i].link+"'><h1 id='quote"+(i+1)+"'>"+people[i].tekst[Math.floor(Math.random() * people[i].tekst.length )]+"</h1></a></div></div>";
+	} else {
+		motherDiv.innerHTML += "<div class='slide' id='slide"+(i+1)+"' data-anchor='slide"+(i+1)+"'><div class='title'><div class='quote'><a href='"+people[i].link+"'><h1 id='quote"+(i+1)+"'>"+people[i].tekst[Math.floor(Math.random() * people[i].tekst.length )]+"</h1></a></div></div>";
+	}
+
 
 	// assign random class for css animation
 	var quoteToBeAnimated = document.getElementById('quote'+(i+1));
@@ -357,3 +336,48 @@ for( var i = 0; i < size; i++ ){
 	quoteToBeAnimated.style.animation += ', ' + classNames[arr[2]] + ' 26s infinite';
 
 }
+
+$(document).ready(function(){
+	$('#fullpage').fullpage({
+		slidesNavigation: true,
+		keyboardScrolling: true,
+		// fadingEffect: true,
+		paddingBottom: '40px',
+		controlArrows: true,
+		// scrollHorizontally: true,
+		// dragAndMove: true,
+
+		afterLoad : function (index) {
+
+			$('.fp-slidesNav ul li a').each(function(index){
+				// assign counters to the links
+				$(this).text(people[index].name);
+				$(this).attr('data-counter' , index );
+
+				// if( $(this).hasClass('active') ) {
+				//
+				// }
+			} );
+ 			addListStyles(randomStart);
+		},
+
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+				addListStyles(nextSlideIndex);
+		}
+
+	});
+});
+
+// $("#name"+(index+1)).css({ 'text-decoration' : 'underline' });
+
+
+$( "#show" ).click(function() {
+  $( "#showoverview" ).fadeToggle(500);
+	$('.top-nav a > p').toggleClass('less');
+});
+
+// $('.top-nav').on('mouseover' , function(){
+// 	$('.top-nav a > p').addClass('more');
+// }).on('mouseleave' , function() {
+// 	$('.top-nav a > p').removeClass('more');
+// });

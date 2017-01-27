@@ -1,4 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Creepster");
+body {
+  background: #f2f2f2; }
+
 html.fp-enabled,
 .fp-enabled body {
   margin: 0;
@@ -89,8 +93,19 @@ html.fp-enabled,
   .prev-nav p, .next-nav p {
     line-height: 40px;
     width: 100vh; }
+    .prev-nav p:before, .next-nav p:before {
+      color: white;
+      content: "↓ "; }
+    .prev-nav p:after, .next-nav p:after {
+      color: white;
+      content: " ↓"; }
+    .prev-nav p.inactive:before, .next-nav p.inactive:before {
+      content: ""; }
+    .prev-nav p.inactive:after, .next-nav p.inactive:after {
+      content: ""; }
 
 .prev-nav {
+  background-color: #393939;
   left: 0;
   top: 0;
   -ms-transform-origin: left bottom 0;
@@ -100,16 +115,18 @@ html.fp-enabled,
   -webkit-transform: rotate(90deg) translateX(-40px);
   transform: rotate(90deg) translateX(-40px); }
   .prev-nav p {
+    letter-spacing: 1px;
     padding: 0;
     margin: 0; }
     .prev-nav p:after {
       color: white;
-      content: "KABK Graphic Design Theses"; }
+      content: "KABK Graphic Design Theses ↓"; }
     .prev-nav p:hover:after {
       color: #aaa;
       content: "previous"; }
 
 .next-nav {
+  background-color: #939393;
   right: 0;
   top: 0;
   -ms-transform-origin: right bottom 0;
@@ -119,11 +136,12 @@ html.fp-enabled,
   -webkit-transform: rotate(-90deg) translateX(40px);
   transform: rotate(-90deg) translateX(40px); }
   .next-nav p {
+    letter-spacing: 1px;
     padding: 0;
     margin: 0; }
     .next-nav p:after {
       color: white;
-      content: "Class of 2017"; }
+      content: "Class of 2017 ↓"; }
     .next-nav p:hover:after {
       color: #aaa;
       content: "next"; }
@@ -178,23 +196,23 @@ html.fp-enabled,
   margin-left: -50%; }
 
 .currentLinks#left2 {
-  color: rgba(0, 0, 0, 0.4);
+  color: #939393;
   left: -40%; }
 
 .currentLinks#left1 {
-  color: rgba(0, 0, 0, 0.8);
+  color: #393939;
   left: -20%; }
 
 .currentLinks#center {
   left: 0%;
-  color: black; }
+  color: #202020; }
 
 .currentLinks#right1 {
-  color: rgba(0, 0, 0, 0.8);
+  color: #393939;
   left: 20%; }
 
 .currentLinks#right2 {
-  color: rgba(0, 0, 0, 0.4);
+  color: #939393;
   left: 40%; }
 
 .fp-slidesNav ul li {
@@ -280,12 +298,12 @@ html.fp-enabled,
   height: auto !important; }
 
 .top-nav {
+  background-color: #141414;
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 40px;
   top: 0;
-  z-index: 12;
-  background: transparent;
+  z-index: 200;
   text-align: center; }
   .top-nav a {
     text-decoration: none;
@@ -293,17 +311,15 @@ html.fp-enabled,
     .top-nav a p {
       padding: 0;
       margin: 0;
-      line-height: 50px; }
-      .top-nav a p:hover {
-        color: #4a4a4a; }
-        .top-nav a p:hover:after {
-          content: " ...  More";
-          color: white; }
-      .top-nav a p.less:hover {
-        color: #4a4a4a; }
-        .top-nav a p.less:hover:after {
-          content: " ...  Less";
-          color: white; }
+      line-height: 40px; }
+      .top-nav a p:before {
+        content: "↑ "; }
+      .top-nav a p:after {
+        content: " ↑"; }
+      .top-nav a p.less:before {
+        content: "✕ "; }
+      .top-nav a p.less:after {
+        content: " ✕"; }
 
 #showoverview {
   display: none;

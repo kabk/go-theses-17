@@ -132,34 +132,34 @@ html.fp-enabled,
 #fp-nav ul li,
 .fp-slidesNav ul li {
     display: inline-block;
-    width: 100%;
+    width: 20vw;
     height: 13px;
     position: absolute;
     /*left: 0;*/
     bottom: 100%;
 }
 .currentLinks {
-  margin-left: -50%;
+  /*margin-left: -50%;*/
 }
 .currentLinks#left2 {
   color: rgba(0,0,0,0.4);
-  left: -40%;
+  /*left: -40%;*/
 }
 .currentLinks#left1 {
   color: rgba(0,0,0,0.8);
-  left: -20%;
+  /*left: -20%;*/
 }
 .currentLinks#center {
-  left: 0%;
+  /*left: 0%;*/
   color: black;
 }
 .currentLinks#right1 {
   color: rgba(0,0,0,0.8);
-  left: 20%;
+  /*left: 20%;*/
 }
 .currentLinks#right2 {
   color: rgba(0,0,0,0.4);
-  left: 40%;
+  /*left: 40%;*/
 }
 
 .fp-slidesNav ul li {

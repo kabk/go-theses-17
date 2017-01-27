@@ -8,7 +8,7 @@ var people = {
 	"0" : {
 		"name" : "Jaap Smit",
 		"titel" : "Het Schild: van Wapen tot Icoon",
-		"tekst" : ["empty", "empty"],
+		"tekst" : ["Ik hou van het spel, ik kan het alleen niet goed spelen"],
 		"egoMention" : "0",
 		"font" : "times",
 		"link" : "https://kabk.github.io/go-theses-17-jaap-smit/",
@@ -399,6 +399,7 @@ $(document).ready(function(){
 $( "#show" ).click(function() {
   $( "#showoverview" ).fadeToggle(500);
 	$('.top-nav a > p').toggleClass('less');
+	$('.next-nav > p, .prev-nav > p').toggleClass('inactive');
 });
 
 // $('.top-nav').on('mouseover' , function(){

@@ -103,7 +103,7 @@ var people = {
 
 	"10" : {
 		"name" : "Fay Asselbergs",
-		"titel" : "Een Symbiotische Relate",
+		"titel" : "Een Symbiotische Relatie",
 		"tekst" : ["HTML is mijn steen en beitel"],
 		"egoMention" : "25",
 		"font" : "georgia",
@@ -244,6 +244,12 @@ var people = {
 	},
 }
 
+$('.top-nav').on('mouseover' , function(){
+	$('.top-nav a > p').addClass('more');
+}).on('mouseleave' , function() {
+	$('.top-nav a > p').removeClass('more');
+});
+
 function addListStyles( nextSlideIndex ) {
 	$('.fp-slidesNav ul li a').each(function(){
 
@@ -259,6 +265,10 @@ function addListStyles( nextSlideIndex ) {
 				$(this).attr('id', 'left1');
 				$(this).addClass('currentLinks').show();
 		} else if ( thisIndex === nextSlideIndex ) {
+				// change title
+				var thisTitle = people[thisIndex].titel;
+				$('.top-nav a > p').text(thisTitle);
+
 				// active
 				$(this).attr('id', 'center');
 				$(this).addClass('currentLinks').show();
@@ -339,7 +349,9 @@ for( var i = 0; i < size; i++ ){
 
 	// insert the quote as a slide in the html
 	// added people[i].titel and people[i].name
-	motherDiv.innerHTML += "<div class='slide' id='slide"+(i+1)+"' data-anchor='slide"+(i+1)+"'><div class='title'><a href='"+people[i].link+"'> "+people[i].titel+" </a></div><div class='name'><a href='"+people[i].link+"'>"+people[i].name+"</a></div><div class='quote'><h1 id='quote"+(i+1)+"'><a href='"+people[i].link+"'>"+people[i].tekst[Math.floor(Math.random() * people[i].tekst.length )]+"</a></h1></div></div>";
+	// <a href='"+people[i].link+"'> "+people[i].titel+" </a></div><div class='name'><a href='"+people[i].link+"'>"+people[i].name+"</a></div>
+
+	motherDiv.innerHTML += "<div class='slide' id='slide"+(i+1)+"' data-anchor='slide"+(i+1)+"'><div class='title'><div class='quote'><a href='"+people[i].link+"'><h1 id='quote"+(i+1)+"'>"+people[i].tekst[Math.floor(Math.random() * people[i].tekst.length )]+"</h1></a></div></div>";
 
 	// assign random class for css animation
 	var quoteToBeAnimated = document.getElementById('quote'+(i+1));

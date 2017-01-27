@@ -1,3 +1,4 @@
+
 #overview{
   width:100vw;
   position:fixed;
@@ -49,10 +50,43 @@
   cursor:pointer;
 }
 
+.top-nav {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  z-index: 99;
+  background: transparent;
+  text-align: center; }
+  .top-nav a {
+    text-decoration: none;
+    color: white; }
+    .top-nav a p {
+      padding: 0;
+      margin: 0;
+      line-height: 40px; }
+      .top-nav a p:hover {
+        color: #aaa; }
+      .top-nav a p:after {
+        content: "..."; }
+      .top-nav a p.more:after {
+        content: "...  More";
+        color: white; }
+
+
 .slide {
   background-color: black; }
+  .slide a {
+    color: red; }
   .slide .quote {
     text-align: center; }
+    .slide .quote a {
+      text-decoration: none;
+      color: white; }
+      .slide .quote a:visited {
+        color: white; }
+      .slide .quote a:active {
+        color: white; }
     .slide .quote h1 {
       font-family: sans-serif;
       text-transform: uppercase;
@@ -62,36 +96,6 @@
       letter-spacing: 10px;
       max-width: 90%;
       margin: 0 auto; }
-
-@keyframes skew {
-  0%{
-    transform:skew(0deg,0deg);
-    text-shadow: 0px -0px 0px white, 0px -0px 0px white, 0px -0px 0px #ff8000, 0px -0px 0px blue; 
-
-  }
-  50%{
-    transform:skew(30deg,10deg);
-    text-shadow: 0px -1px 4px white, 0px -2px 10px white, 0px -10px 20px #ff8000, 0px -18px 40px blue; 
-  }
-
-  100%{
-    transform:skew(0deg,0deg);
-    text-shadow: 0px -0px 0px white, 0px -0px 0px white, 0px -0px 0px #ff8000, 0px -0px 0px blue; 
-  }
-
-}
-
-@keyframes void {
-  0%{
-    color: red;
-  }
-  50%{
-    color: yellow;
-  }
-  100%{
-    color: red;
-  }
-}
 
 @keyframes spin {
   0% {
@@ -146,6 +150,7 @@
     letter-spacing: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
+
 
 .jaap{
   animation: fire 5s infinite;
@@ -352,4 +357,6 @@
   font-family: 'worksans';
   src: url(thesis-fonts/worksans.ttf);
 }
+
+
 

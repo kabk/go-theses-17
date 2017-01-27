@@ -386,16 +386,7 @@ $(document).ready(function(){
  			addListStyles(randomStart);
 		},
 
-		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-			$('#slide' + (slideIndex + 1)).css({
-				"background-color" : "blue"
-			});
-		},
-
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
-				$('#slide' + (slideIndex)).css({
-					"background-color" : "red"
-				});
 				addListStyles(nextSlideIndex);
 		}
 

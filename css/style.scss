@@ -426,7 +426,7 @@ html.fp-enabled,
 }
 
 @keyframes backgrbluetodarkblue {
-  0% { 
+  0% {
     background-color: rgb(219,239,255);
   }
   50%{
@@ -438,7 +438,7 @@ html.fp-enabled,
 }
 
 @keyframes textbluetodarkblue {
-  0% { 
+  0% {
     color: rgb(2,66,228);
     -webkit-filter: blur(0px);
   }
@@ -454,7 +454,7 @@ html.fp-enabled,
 
 /*makes a border around the text*/
 @keyframes border {
-  0% { 
+  0% {
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: white;
   }
@@ -684,16 +684,16 @@ html.fp-enabled,
 .jordy.active {
   background-color:black;
   a{
-     
+
   }
 }
 
 .carmel.active {
-     
+
 }
 
 .janne.active {
-     
+
 }
 
 .katerina.active {
@@ -703,14 +703,14 @@ html.fp-enabled,
 }
 
 .pascal.active {
-     
+
 }
 
 .alice.active {
   background-color: black;
   a{
     animation: whitetopink 5s infinite;
-  } 
+  }
 }
 
 .yacinth.active {
@@ -719,27 +719,27 @@ html.fp-enabled,
       a{
 
       }
-     
+
 }
 
 .fay.active {
-     
+
 }
 
 .laura.active {
-     
+
 }
 
 .antonia.active {
-     
+
 }
 
 .wies.active {
-     
+
 }
 
 .marton.active {
-     
+
 }
 
 .sean.active {
@@ -753,7 +753,7 @@ html.fp-enabled,
 }
 
 .magda.active {
-  // 
+  //
 }
 
 .lisa.active {
@@ -765,22 +765,19 @@ html.fp-enabled,
 }
 
 .ninthe.active {
-  background-color: white;
-    a{
-        0% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
-        50% { text-shadow: -36px -36px 30px rgba(255, 0, 0, 1); }
-        100% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
-      }
+    background-color: white;
+    a {
+
     }
-  // color to red, red dropshadow, white backgr
 }
+
 
 .bohye.active {
   // wildcard
 }
 
 .manus.active {
-  // 
+  //
 }
 
 .jamie.active {

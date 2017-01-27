@@ -162,7 +162,7 @@ html.fp-enabled,
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
-    display: block;
+    display: inline-block;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -412,6 +412,9 @@ html.fp-enabled,
 }
 
 .jaap{
+  h1 {
+
+  }
   // animation: fire 5s infinite;
   // animation: random 2s infinite;
 }

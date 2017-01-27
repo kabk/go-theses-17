@@ -164,7 +164,7 @@ html.fp-enabled,
 
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
-  display: block;
+  display: inline-block;
   position: absolute;
   z-index: 1;
   width: 100%;

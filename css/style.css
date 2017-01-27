@@ -4,22 +4,22 @@
   height: 40px;
   top: 0;
   z-index: 99;
-  background: #fff;
+  background: transparent;
   text-align: center; }
   .top-nav a {
     text-decoration: none;
-    color: black; }
+    color: white; }
     .top-nav a p {
       padding: 0;
       margin: 0;
       line-height: 40px; }
       .top-nav a p:hover {
-        color: rgba(0, 0, 0, 0.6); }
+        color: #aaa; }
       .top-nav a p:after {
         content: "..."; }
       .top-nav a p.more:after {
         content: "...  More";
-        color: black; }
+        color: white; }
 
 .slide {
   background-color: black; }

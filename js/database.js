@@ -103,7 +103,7 @@ var people = {
 
 	"10" : {
 		"name" : "Fay Asselbergs",
-		"titel" : "Een Symbiotische Relate",
+		"titel" : "Een Symbiotische Relatie",
 		"tekst" : ["HTML is mijn steen en beitel"],
 		"egoMention" : "25",
 		"font" : "georgia",

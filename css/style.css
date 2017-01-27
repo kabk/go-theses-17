@@ -1,7 +1,7 @@
 .top-nav {
   position: absolute;
   width: 100%;
-  height: 40px;
+  height: 50px;
   top: 0;
   z-index: 99;
   background: transparent;
@@ -12,7 +12,7 @@
     .top-nav a p {
       padding: 0;
       margin: 0;
-      line-height: 40px; }
+      line-height: 50px; }
       .top-nav a p:hover {
         color: #aaa; }
       .top-nav a p:after {

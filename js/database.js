@@ -329,6 +329,12 @@ for( var i = 0; i < size; i++ ){
 	    arr[arr.length] = randomnumber;
 	}
 
+	var overviewDiv = document.getElementById('showoverview');
+	overviewDiv.innerHTML += "<br><a href='"+people[i].link+"'><div class='overviewtitles'> <span id='overviewtitle"+(i+1)+"'>"+people[i].titel.toUpperCase()+"</span><br><span id='overviewname'>"+people[i].name+"</span><br> </div></a>";
+	
+	var titleStyle = document.getElementById('overviewtitle'+(i+1));
+	titleStyle.style.fontFamily = people[i].font;
+
 	var motherDiv = document.getElementById('section1');
 
 	// insert the quote as a slide in the html
@@ -344,4 +350,22 @@ for( var i = 0; i < size; i++ ){
 	quoteToBeAnimated.style.animation += ', ' + classNames[arr[1]] + ' 23s infinite';
 	quoteToBeAnimated.style.animation += ', ' + classNames[arr[2]] + ' 26s infinite';
 
-}
+}		
+// $("#name"+(index+1)).css({ 'text-decoration' : 'underline' });
+
+
+$( "#getoverview" ).click(function() {
+  // $( "#showoverview" ).css({'display' : 'block'});
+  $( "#showoverview" ).fadeIn(500);
+
+});
+
+$( "#close" ).click(function() {
+  // $( "#showoverview" ).css({'display' : 'none'});
+    $( "#showoverview" ).fadeOut(500);
+
+});
+
+
+
+

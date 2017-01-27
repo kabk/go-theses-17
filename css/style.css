@@ -1,3 +1,54 @@
+#overview{
+  width:100vw;
+  position:fixed;
+  height:40px;
+  line-height:40px;
+  font-family:lyon;
+  color:white;
+  z-index: 99999999;
+  text-align: center;
+}
+
+#overview span:hover{
+  cursor:pointer;
+}
+
+#showoverview{
+  display:none;
+  width:100vw;
+  position:fixed;
+  overflow:scroll;
+  height:94vh;
+  background-color: black;
+  z-index: 99999999;
+  color:white;
+  font-family:lyon;
+  text-align:center;
+  font-size:50px;
+}
+
+#showoverview a{
+  text-decoration: none;
+  color:white;
+}
+
+#cross{
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:40px;
+  height:40px;
+}
+
+#cross img{
+  width:100%;
+  height:100%;
+}
+
+#cross img:hover{
+  cursor:pointer;
+}
+
 .slide {
   background-color: black; }
   .slide .quote {
@@ -274,7 +325,7 @@
 
 @font-face {
   font-family: 'lyon';
-  src: url(thesis-fonts/`.ttf);
+  src: url(thesis-fonts/lyon.ttf);
 }
 
 @font-face {

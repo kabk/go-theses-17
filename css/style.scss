@@ -475,11 +475,16 @@ html.fp-enabled,
   }
 }
 
-
 @keyframes flash {
   0% { color: yellow; }
   50% { color: red; }
   100% { color: yellow; }
+}
+
+@keyframes whitetopink {
+  0% { color: white; }
+  50% { color: rgb(255,204,255); }
+  100% { color: white; }
 }
 
 @keyframes flash2 {
@@ -504,8 +509,6 @@ html.fp-enabled,
     transform: rotate(360deg);
   }
 }
-
-
 
 @keyframes spin {
   0% { -webkit-transform: rotateY(360deg); }
@@ -566,13 +569,53 @@ html.fp-enabled,
 
 }
 
+@keyframes katiefire {
+  0%{
+      text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+  }
+
+  50%{
+      text-shadow: 0px -1px 2px white, 0px -2px 8px yellow, 0px -10px 20px #ff8000, 0px -18px 30px red;
+  }
+
+  100%{
+      text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+  }
+}
+
+@keyframes bluedrop {
+  0%{
+      text-shadow: 0px 0px 0px white, 0px 0px 0px blue;
+  }
+  50%{
+      text-shadow: -4px -4px 4px white, -8px -8px 8px blue;
+  }
+  100%{
+      text-shadow: 0px 0px 0px white, 0px 0px 0px blue;
+  }
+}
+
+@keyframes skew{
+  0% {
+    -webkit-transform: skewX(0deg); /* Safari */
+  }
+  50%{
+    -webkit-transform: skewX(40deg); /* Safari */
+  }
+  100%{
+    -webkit-transform: skewX(0deg); /* Safari */
+  }
+}
+
 .jaap.active{
   animation: rotating 1s infinite;
   // animation: random 2s infinite;
 }
 
 .remco.active{
-    // animation: skew 2s infinite;
+  a{
+    animation: skew 3s infinite, bluedrop 3s infinite;
+  }
 }
 
 .noa.active {
@@ -581,56 +624,72 @@ html.fp-enabled,
 
 .jordy.active {
   background-color:black;
-  h1{
-    // animation: fire;
+  a{
+     
   }
 }
 
 .carmel.active {
-    // animation: fire;
+     
 }
 
 .janne.active {
-    // animation: fire;
+     
 }
 
 .katerina.active {
-    // animation: fire;
+   a{
+    animation: katiefire 4s infinite;
+   }
 }
 
 .pascal.active {
-    // animation: fire;
+     
 }
 
 .alice.active {
-    // animation: fire;
+  background-color: black;
+  a{
+    animation: whitetopink 5s infinite;
+  } 
 }
 
 .yacinth.active {
-    // animation: fire;
+    background-image: url("../img/yacinth.png");
+    background-repeat: repeat;
+      a{
+
+      }
+     
 }
 
 .fay.active {
-    // animation: fire;
+     
 }
 
 .laura.active {
-    // animation: fire;
+     
 }
 
 .antonia.active {
-    // animation: fire;
+     
 }
 
 .wies.active {
-    // animation: fire;
+     
 }
 
 .marton.active {
-    // animation: fire;
+     
 }
 
 .sean.active {
+    background-image: url("../img/sean.png");
+    background-repeat: repeat;
+      a{
+        color: white;
+        // skew
+      }
   // skew, black backgr
 }
 
@@ -647,6 +706,13 @@ html.fp-enabled,
 }
 
 .ninthe.active {
+  background-color: white;
+    a{
+        0% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
+        50% { text-shadow: -36px -36px 30px rgba(255, 0, 0, 1); }
+        100% { text-shadow: 36px 36px 10px rgba(255, 0, 0, 1);}
+      }
+    }
   // color to red, red dropshadow, white backgr
 }
 
@@ -659,14 +725,27 @@ html.fp-enabled,
 }
 
 .jamie.active {
+  animation: backgrbluetodarkblue 4s infinte;
+    a{
+      animation: textbluetodarkblue 4s infinte, bounce 2s infinite;
+    }
   // lichtblauw to donkerblauw backgr, donkerblauw to lichtblauw text, floating
 }
 
 .amaya.active {
-  //black to yellow? beetje viesgeel
+  background-color: white;
+    a{
+      animation: blackyellowblack 0.5s infinite;
+    }
+
 }
 
 .carlijn.active {
+  background-color: white;
+    a{
+      color: black;
+      animation: eraser 1s infinite, bounce 0.5s infinite;
+    }
   //white background, opacity change, black text, bounce?
 }
 

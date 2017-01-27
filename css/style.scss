@@ -4,11 +4,8 @@
 	height: 40px;
 	top: 0;
 	z-index: 99;
-	background: #999;
+	background: #fff;
 	text-align: center;
-	&:hover {
-		background: #fff;
-	}
 	a {
 		text-decoration: none;
 		color: black;
@@ -16,8 +13,18 @@
 			padding: 0;
 			margin: 0;
 			line-height: 40px;
+			&:hover {
+				color: rgba(0,0,0, 0.6);
+			}
 			&:after {
 				content: "...";
+			}
+			&.more {
+				&:after {
+					content: "...  More";
+					color: black;
+					// text-decoration: underline;
+				}
 			}
 		}
 	}

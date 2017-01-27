@@ -69,25 +69,28 @@ html.fp-enabled,
     z-index: 4;
     top: 50%;
     cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
+    width: 30px;
+    height: 50px;
+    /*border-style: solid;*/
     margin-top: -38px;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG_1moYi3WPLdBOYQHePdYMyoPNbS2M2KLEtR46vR8arEeD3ygrMzvLA');
-    left: 15px;
-    width: 0;
+    background-image: url('../img/left.png');
+    left: 10px;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    background-image: url('../img/right.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 10px;
+    /*border-width: 38.5px 0 38.5px 34px;*/
+    /*border-color: transparent transparent transparent #fff;*/
 }
 .fp-scrollable {
     overflow: hidden;

@@ -244,6 +244,12 @@ var people = {
 	},
 }
 
+$('.top-nav').on('mouseover' , function(){
+	$('.top-nav a > p').addClass('more');
+}).on('mouseleave' , function() {
+	$('.top-nav a > p').removeClass('more');
+});
+
 function addListStyles( nextSlideIndex ) {
 	$('.fp-slidesNav ul li a').each(function(){
 
@@ -262,7 +268,6 @@ function addListStyles( nextSlideIndex ) {
 				// change title
 				var thisTitle = people[thisIndex].titel;
 				$('.top-nav a > p').text(thisTitle);
-
 
 				// active
 				$(this).attr('id', 'center');

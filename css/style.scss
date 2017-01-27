@@ -800,6 +800,18 @@ line-height:10px;
   }
 }
 
+@keyframes bohye{
+  0%{
+    -webkit-transform: scale(1);
+  }
+  50%{
+    -webkit-transform: scale(1.5);
+  }
+  100%{
+    -webkit-transform: scale(1);   
+  }
+}
+
 @keyframes wiesje2{
   0%{
     opacity:0;
@@ -873,6 +885,51 @@ background-color: black;
   100% { text-shadow: 0px 0px 0px rgba(255, 0, 0, 1);}
 }
 
+@keyframes lisa{
+  0%{
+    color:white;
+
+  }
+  50%{
+    color:black;
+
+  }
+  100%{
+    color:white;
+
+  }
+}
+
+@keyframes lisa2{
+  0%{
+    background-color:black;
+
+  }
+  50%{
+    background-color:white;
+
+  }
+  100%{
+    background-color:black;
+
+  }
+}
+
+@keyframes janne{
+  0%{
+    color:blue;
+
+  }
+  50%{
+    color:black;
+
+  }
+  100%{
+    color:blue;
+
+  }
+}
+
 .jaap.active{
   h1{animation: rotating 1s infinite;}
   // animation: random 2s infinite;
@@ -906,7 +963,9 @@ background-color: black;
 }
 
 .janne.active {
-
+  h1{
+    animation: janne 0.5s infinite;
+  }
 }
 
 .katerina.active {
@@ -993,6 +1052,10 @@ background-color: black;
 }
 
 .lisa.active {
+  animation: lisa2 3s infinite;
+  h1{
+    animation: lisa 3s infinite;
+  }
   // wildcard
 }
 
@@ -1015,6 +1078,9 @@ background-color: black;
 
 .bohye.active {
   // wildcard
+  h1{
+    animation:bohye 0.5s infinite;
+  }
 }
 
 .manus.active {

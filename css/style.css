@@ -63,32 +63,70 @@ html.fp-enabled,
   /* webkit (konqueror) browsers */
   -ms-user-select: none;
   /* IE10+ */
-  position: absolute;
+  position: fixed;
   z-index: 4;
-  top: 50%;
+  top: 0;
   cursor: pointer;
-  width: 30px;
-  height: 50px;
-  /*border-style: solid;*/
-  margin-top: -38px;
+  height: 100vh;
+  width: 40px;
+  text-align: center;
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
+  .fp-controlArrow.fp-prev {
+    left: 0; }
+  .fp-controlArrow.fp-next {
+    right: 0; }
 
-.fp-controlArrow.fp-prev {
-  background-image: url("../img/left.png");
-  left: 10px;
-  border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #fff transparent transparent; }
+.prev-nav, .next-nav {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 3; }
+  .prev-nav p, .next-nav p {
+    line-height: 40px;
+    width: 100vh; }
 
-.fp-controlArrow.fp-next {
-  background-image: url("../img/right.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  right: 10px;
-  /*border-width: 38.5px 0 38.5px 34px;*/
-  /*border-color: transparent transparent transparent #fff;*/ }
+.prev-nav {
+  left: 0;
+  top: 0;
+  -ms-transform-origin: left bottom 0;
+  -webkit-transform-origin: left bottom 0;
+  transform-origin: left bottom 0;
+  -ms-transform: rotate(90deg) translateX(-40px);
+  -webkit-transform: rotate(90deg) translateX(-40px);
+  transform: rotate(90deg) translateX(-40px); }
+  .prev-nav p {
+    padding: 0;
+    margin: 0; }
+    .prev-nav p:after {
+      color: white;
+      content: "KABK Graphic Design Theses"; }
+    .prev-nav p:hover:after {
+      color: #aaa;
+      content: "previous"; }
+
+.next-nav {
+  right: 0;
+  top: 0;
+  -ms-transform-origin: right bottom 0;
+  -webkit-transform-origin: right bottom 0;
+  transform-origin: right bottom 0;
+  -ms-transform: rotate(-90deg) translateX(40px);
+  -webkit-transform: rotate(-90deg) translateX(40px);
+  transform: rotate(-90deg) translateX(40px); }
+  .next-nav p {
+    padding: 0;
+    margin: 0; }
+    .next-nav p:after {
+      color: white;
+      content: "Class of 2017"; }
+    .next-nav p:hover:after {
+      color: #aaa;
+      content: "next"; }
 
 .fp-scrollable {
   overflow: hidden;

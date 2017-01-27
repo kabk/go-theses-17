@@ -330,10 +330,10 @@ for( var i = 0; i < size; i++ ){
 	var quoteToBeAnimated = document.getElementById('quote'+(i+1));
 
 	quoteToBeAnimated.style.fontFamily = people[i].font;
-
-	quoteToBeAnimated.style.animation += '' + classNames[arr[0]] + ' 20s infinite';
-	quoteToBeAnimated.style.animation += ', ' + classNames[arr[1]] + ' 23s infinite';
-	quoteToBeAnimated.style.animation += ', ' + classNames[arr[2]] + ' 26s infinite';
+	
+	// quoteToBeAnimated.style.animation += '' + classNames[arr[0]] + ' 20s infinite';
+	// quoteToBeAnimated.style.animation += ', ' + classNames[arr[1]] + ' 23s infinite';
+	// quoteToBeAnimated.style.animation += ', ' + classNames[arr[2]] + ' 26s infinite';
 
 }
 

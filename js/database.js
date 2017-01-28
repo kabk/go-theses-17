@@ -85,7 +85,7 @@ var people = {
 		"tekst" : ["As a design student I have always had an interest in the role of the graphic designer and the development of the field", "As much as I declare ridicule and humor a weapon, it’s a peaceful one at that"],
 		"egoMention" : "20",
 		"font" : "atlas",
-		"link" : "https://kabk.github.io/go-theses-17-pascal-schilp/",
+		"link" : "http://thepassle.nl/scriptiesite/index.html",
 		"class" : "pascal"
 	},
 
@@ -225,7 +225,7 @@ var people = {
 		"tekst" : ["When I consider the concept of existence, I mention this poem", "I would define it as follows: it literally means nothing", "As a graphic design student, I am torn between aesthetically beautiful design and simplicity", "I can conclude that the essence of content should be considered as a tool that enables harmony through minimized involvement"],
 		"egoMention" : "72",
 		"font" : "times",
-		"link" : "https://kabk.github.io/go-theses-17-bohye-woo-thesis-title/",
+		"link" : "https://kabk.github.io/go-theses-17-bohye-woo/",
 		"class" : "bohye"
 	},
 

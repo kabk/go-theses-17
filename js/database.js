@@ -51,7 +51,7 @@ var people = {
 		"titel" : "Manga and anime: Reformulating the frame of mind",
 		"tekst" : ["I consider manga and anime critical design", "I propose that fiction and work are seen as a team"],
 		"egoMention" : "13",
-		"font" : "square",
+		"font" : "square, times",
 		"link" : "https://kabk.github.io/go-theses-17-carmel-klein/",
 		"class" : "carmel"
 	},
